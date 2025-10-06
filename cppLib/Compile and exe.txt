@@ -1,0 +1,12 @@
+Compilation and execution using the terminal.
+g++ hello.cpp -o hello
+./hello
+
+g++ main.cpp add.cpp -o exe
+
+Using g++, you can use the -I option to specify an alternate include directory.
+g++ -o main -I/source/includes main.cpp
+
+
+Single line comments can be created using //.
+Multi-line comments can be created using /* */
