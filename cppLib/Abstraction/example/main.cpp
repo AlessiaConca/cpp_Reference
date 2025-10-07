@@ -2,6 +2,7 @@
 
 int main() {
   int main() {
+  // use pointer as the base method is virtual + do not lose derived behaviour + dunamic allocation
   Aircraft* firstFlyingCar = new FlyingCar(); // 'new' allocates memory for a FlyingCar object and calls its constructor, returning a pointer to Aircraft
   firstFlyingCar -> fly(200); // '->' is used to access the fly method through the pointer
   
@@ -13,4 +14,5 @@ int main() {
   
   return 0; // Return 0 to indicate successful program execution
 }
+
 
