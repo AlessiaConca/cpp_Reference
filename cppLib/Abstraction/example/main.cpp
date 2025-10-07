@@ -1,11 +1,16 @@
 #include "FlyingCar.hpp"
 
 int main() {
-  Aircraft* firstFlyingCar = new FlyingCar();
-  firstFlyingCar -> fly(200);
-  Car* secondFlyingCar = new FlyingCar();
-  secondFlyingCar -> drive(50);
-  delete firstFlyingCar;
-  delete secondFlyingCar;
-  return 0;
+  int main() {
+  Aircraft* firstFlyingCar = new FlyingCar(); // 'new' allocates memory for a FlyingCar object and calls its constructor, returning a pointer to Aircraft
+  firstFlyingCar -> fly(200); // '->' is used to access the fly method through the pointer
+  
+  Car* secondFlyingCar = new FlyingCar(); // 'new' allocates memory for another FlyingCar object and calls its constructor, returning a pointer to Car
+  secondFlyingCar -> drive(50); // '->' is used to access the drive method through the pointer
+  
+  delete firstFlyingCar; // 'delete' frees the memory allocated for the firstFlyingCar object and calls its destructor
+  delete secondFlyingCar; // 'delete' frees the memory allocated for the secondFlyingCar object and calls its destructor
+  
+  return 0; // Return 0 to indicate successful program execution
 }
+
